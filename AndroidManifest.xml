@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.inducesmile.androidpayexample"
+    platformBuildVersionCode="24"
+    platformBuildVersionName="7.0">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="24" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <application
+        android:theme="@ref/0x7f080091"
+        android:label="@ref/0x7f060039"
+        android:icon="@ref/0x7f030000"
+        android:name="com.ecommerce.furniture.network.CustomApplication"
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <activity
+            android:name="com.ecommerce.furniture.SplashActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ecommerce.furniture.ShoppingActivity" />
+
+        <activity
+            android:name="com.ecommerce.furniture.ProductActivity" />
+
+        <activity
+            android:name="com.ecommerce.furniture.CheckoutActivity" />
+
+        <activity
+            android:name="com.ecommerce.furniture.PaymentsActivity" />
+
+        <activity
+            android:name="com.ecommerce.furniture.PayPalCheckoutActivity" />
+
+        <activity
+            android:name="com.ecommerce.furniture.SearchAreaWiseShopActivity" />
+
+        <activity
+            android:name="com.ecommerce.furniture.ShopActivity" />
+
+        <activity
+            android:name="com.ecommerce.furniture.CategoryActivity" />
+
+        <activity
+            android:name="com.ecommerce.furniture.StudyRoomActivity" />
+
+        <activity
+            android:name="com.ecommerce.furniture.RegisterActivity" />
+
+        <activity
+            android:name="com.ecommerce.furniture.LoginActivity" />
+
+        <activity
+            android:name="com.ecommerce.furniture.CustomizedRequestActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0a0005" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.LoginActivity" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+    </application>
+</manifest>
